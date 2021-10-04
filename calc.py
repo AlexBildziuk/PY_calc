@@ -118,9 +118,9 @@ class CalculatorApp(App):
         self.formula = ""    
 
     def fact(self, instance):
-        if (self.formula == "0"):
+        if (self.lbl.text == "0"):
             self.formula ="1"
-        elif (self.formula.find('.') != -1):
+        elif (self.lbl.text.find('.') != -1):
             self.formula ="0"
         else:
             n = int(self.lbl.text)
